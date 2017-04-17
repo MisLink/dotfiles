@@ -1,5 +1,6 @@
 set nocompatible  " 关闭 vi 兼容模式
 set encoding=utf-8  " utf-8 编码
+set mouse=a
 syntax on  " 自动语法高亮
 set expandtab  "
 set number  " 显示行号

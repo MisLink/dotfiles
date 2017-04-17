@@ -30,7 +30,7 @@ function writegitprompt($status){
         if($status.HasIndex) {
             write-host "|" -nonewline
             write-host "$([char]0x25CF)" -nonewline -ForegroundColor @{$true='Green';$false='DarkGray'}[$status.Index.Added -and $status.Index.Added.Count -ge 0]
-            write-host "$([char]0x25CF)" -nonewline -ForegroundColor @{$true=(@{$true='Red';$false='Yellow'}[$status.Index.Unmerged -and $status.Index.Unmerged.Count -ge 0]);false=(@{$true='Red';$false='DarkGray'}[$status.Index.Unmerged -and $status.Index.Unmerged.Count -ge 0])}[$status.Index.Modified -and $status.Index.Modified.Count -ge 0]
+            write-host "$([char]0x25CF)" -nonewline -ForegroundColor @{$true=(@{$true='Red';$false='Yellow'}[$status.Index.Unmerged -and $status.Index.Unmerged.Count -ge 0]);$false=(@{$true='Red';$false='DarkGray'}[$status.Index.Unmerged -and $status.Index.Unmerged.Count -ge 0])}[$status.Index.Modified -and $status.Index.Modified.Count -ge 0]
             write-host "$([char]0x25CF)" -nonewline -ForegroundColor @{$true='Red';$false='DarkGray'}[$status.Index.Deleted -and $status.Index.Deleted.Count -ge 0]
         }
         write-host ')' -nonewline
@@ -49,7 +49,7 @@ function global:prompt {
     Write-Host($pwd.ProviderPath) -nonewline -ForegroundColor Green
 
     writegitprompt (Get-GitStatus)
-
+    # write-vcsStatus
     # Rightmost time display
     # Save cursor position first
     $saveY = [console]::CursorTop

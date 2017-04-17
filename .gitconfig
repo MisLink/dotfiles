@@ -2,7 +2,7 @@
 	name = MisLink
 	email = gjq.uoiai@outlook.com
 [core]
-	editor = vim
+	editor = vim.bat
 	excludesfile = C:\\Users\\gjquo\\.gitignore
 	autocrlf = false
     quotepath = false
