@@ -4,13 +4,13 @@
 
 ## vim
 
-I'm not a heavy user of vim, so .vimrc just let vim looks like a editor.
+I'm not a heavy user of vim, so .vimrc just let vim look like an editor.
 
 
 
 ## git
 
-Just like vim, gitconfig is simple too.
+Just like vim, .gitconfig is simple too.
 
 
 
