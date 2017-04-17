@@ -22,4 +22,4 @@ I use vscode most of the time, [here](https://gist.github.com/MisLink/944141e210
 
 ## Powershell
 
-Makes powershell looks like oh-my-zsh.
+Makes powershell look like oh-my-zsh.
