@@ -1,4 +1,3 @@
-Import-Alias -Force "~/alias.ps1"
 $OutputEncoding = New-Object -typename System.Text.UTF8Encoding
 . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
@@ -67,6 +66,7 @@ function global:prompt {
     return " $([char]0x3BB) "
     # return " $([char]0x2764) "
 }
+
 if (Test-Path ".\venv\Scripts\activate") {
     .\venv\Scripts\activate.ps1
 }
