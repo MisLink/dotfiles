@@ -78,10 +78,8 @@ function pip3_update {
 
 Set-Alias pip-update pip_update
 Set-Alias pip3-update pip3_update
+Set-Alias sudo csudo
 
 if (Test-Path ".\venv\Scripts\activate") {
     .\venv\Scripts\activate.ps1
-}
-elseif (Test-Path "C:\Users\gjquo\me\Scripts\activate") {
-    C:\Users\gjquo\me\Scripts\activate.ps1
 }
