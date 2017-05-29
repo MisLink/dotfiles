@@ -1,5 +1,5 @@
-$OutputEncoding = New-Object -typename System.Text.UTF8Encoding
-# $outputencoding = [System.Text.Encoding]::GetEncoding("utf-8")
+# $OutputEncoding = New-Object -typename System.Text.UTF8Encoding
+$outputencoding = [System.Text.Encoding]::GetEncoding("utf-8")
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
