@@ -15,6 +15,8 @@
 	ss = status -s
 	c = commit -s
 	cp = cherry-pick -x
+	co = checkout
+	amend = commit --amend
 	uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
 	l = log --graph --decorate --date=format:'%Y-%m-%d %H:%M:%S' --abbrev-commit --pretty=format:'%C(red)%h%C(reset) - %C(green)(%cd)%C(reset) %s %C(bold blue)<%an>%C(reset)%C(yellow)%d%C(reset)'
 [filter "lfs"]
