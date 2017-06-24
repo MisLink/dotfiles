@@ -1,11 +1,10 @@
 $OutputEncoding = New-Object -typename System.Text.UTF8Encoding
-# $outputencoding = [System.Text.Encoding]::GetEncoding("utf-8")
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+# $outputencoding = [System.Text.Encoding]::GetEncoding("utf-8")
 Set-PSReadlineKeyHandler -Key Tab -Function Complete
 # Load posh-git module from current directory
 Import-Module posh-git
 
-$scripts = resolve-path ~/Documents/dotfiles
 Import-Module "Pscx"
 # Get full name of user
 $username = [Environment]::UserName
