@@ -87,6 +87,7 @@ if (test-path alias:\set) { remove-item alias:\set -force }
 set-alias set set-variableEx -force
 set-alias unset remove-variable
 set-alias sudo Invoke-Elevated
+set-alias vi vim
 
 
 if (Test-Path ".\venv\Scripts\activate") {
