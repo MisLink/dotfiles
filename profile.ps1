@@ -73,7 +73,7 @@ function global:prompt {
 }
 
 # alias
-function pip_update {
+function pip2_update {
     pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U
 }
 
@@ -81,12 +81,13 @@ function pip3_update {
     pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U
 }
 
-Set-Alias pip-update pip_update
+Set-Alias pip2-update pip2_update
 Set-Alias pip3-update pip3_update
 if (test-path alias:\set) { remove-item alias:\set -force }
 set-alias set set-variableEx -force
 set-alias unset remove-variable
 set-alias sudo Invoke-Elevated
+
 
 if (Test-Path ".\venv\Scripts\activate") {
     .\venv\Scripts\activate.ps1
