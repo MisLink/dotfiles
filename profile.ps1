@@ -68,7 +68,8 @@ function global:prompt {
     write-host "]" -nonewline
     [console]::setcursorposition(0, $saveY + 1)
     $global:LASTEXITCODE = $realLASTEXITCODE
-    return " $([char]0x3BB) "
+    return " :) "
+    # return " $([char]0x3BB) "
     # return " $([char]0x2764) "
 }
 
