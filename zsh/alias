@@ -1,0 +1,14 @@
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+alias grep='grep -E'
+alias df='df -h'
+alias du='du -h'
+
+if which vim &>/dev/null; then
+    alias vi='vim'
+fi
+
+alias pip2_update='pip2 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U'
+alias pip3_update='pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip3 install -U'
+

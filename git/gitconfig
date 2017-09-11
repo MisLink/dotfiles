@@ -1,0 +1,20 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+	autocrlf = false
+	quotepath = false
+[diff]
+	tool = default-difftool
+[difftool "default-difftool"]
+	cmd = code --wait --diff $LOCAL $REMOTE
+[alias]
+	s = status
+	ss = status -s
+	cs = commit -s
+	cp = cherry-pick -x
+	co = checkout
+	amend = commit -a --amend
+	unc = reset --mixed HEAD^
+	snapshot = !git stash save "snapshot: $(date +'%Y-%m-%d %H:%M:%S')" && git stash apply "stash@{0}"
+	snapshots = !git stash list --grep snapshot
+	l = log --graph --decorate --date=format:'%Y-%m-%d %H:%M:%S' --abbrev-commit --pretty=format:'%C(red)%h%C(reset) - %C(green)(%cd)%C(reset) %s %C(bold blue)<%an>%C(reset)%C(yellow)%d%C(reset)'
