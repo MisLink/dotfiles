@@ -2,6 +2,8 @@ alias del='trash -v'
 alias grep='grep -E'
 alias df='df -h'
 alias du='du -h'
+alias ss-on='export http_proxy=127.0.0.1:1087;export https_proxy=$http_proxy'
+alias ss-off='unset http_proxy;unset https_proxy'
 
 if which vim &>/dev/null; then
     alias vi='vim'
