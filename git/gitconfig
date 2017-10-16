@@ -6,7 +6,7 @@
 [diff]
 	tool = default-difftool
 [difftool "default-difftool"]
-	cmd = code --wait --diff $LOCAL $REMOTE
+	cmd = code --wait --diff -n $LOCAL $REMOTE
 [alias]
 	s = status
 	ss = status -s
