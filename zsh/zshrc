@@ -12,5 +12,5 @@ fi
 if [[ -e `pwd`/venv/bin/activate ]]; then
     source `pwd`/venv/bin/activate
 elif [[ -e `pwd`/env/bin/activate ]]; then
-    source `pwd`/venv/bin/activate
+    source `pwd`/env/bin/activate
 fi
