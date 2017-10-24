@@ -32,4 +32,3 @@ fi
 cp -v zsh/ys.zsh-theme ~/.oh-my-zsh/custom/themes
 cp -v zsh/alias ~/.alias
 cp -v zsh/zshrc ~/.zshrc
-source ~/.zshrc
