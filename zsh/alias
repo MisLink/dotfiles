@@ -34,16 +34,16 @@ pip-update(){
 
 pip-lint(){
     if [[ -z $* ]]; then
-        pip install flake8 yapf pep8-naming flake8-docstrings
+        pip install flake8 yapf mypy mypy-extensions pep8-naming flake8-docstrings
     else
         while getopts "23" version
         do
             case $version in
                 2)
-                    pip2 install flake8 yapf pep8-naming flake8-docstrings
+                    pip2 install flake8 yapf mypy mypy-extensions pep8-naming flake8-docstrings
                 ;;
                 3)
-                    pip3 install flake8 yapf pep8-naming flake8-docstrings
+                    pip3 install flake8 yapf mypy mypy-extensions pep8-naming flake8-docstrings
                 ;;
                 ?)
                     echo "option must in [-2, -3]"
