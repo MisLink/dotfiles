@@ -13,7 +13,7 @@
 	cs = commit -s
 	cp = cherry-pick -x
 	co = checkout
-	amend = commit -a --amend
+	amend = commit --amend
 	unc = reset --mixed HEAD^
 	snapshot = !git stash save "snapshot: $(date +'%Y-%m-%d %H:%M:%S')" && git stash apply "stash@{0}"
 	snapshots = !git stash list --grep snapshot
