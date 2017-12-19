@@ -5,51 +5,8 @@ alias du='du -h'
 alias j='z'
 alias ss-on='export http_proxy=127.0.0.1:1087;export https_proxy=$http_proxy'
 alias ss-off='unset http_proxy;unset https_proxy'
+alias pip-update="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U"
 
 if which vim &>/dev/null; then
     alias vi='vim'
 fi
-
-pip-update(){
-    if [[ -z $* ]]; then
-        pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U
-    else
-        while getopts "23" version
-        do
-            case $version in
-                2)
-                    pip2 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip2 install -U
-                ;;
-                3)
-                    pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip3 install -U
-                ;;
-                ?)
-                    echo "option must in [-2, -3]"
-                    exit 1
-                ;;
-            esac
-        done
-    fi
-}
-
-pip-lint(){
-    if [[ -z $* ]]; then
-        pip install flake8 yapf mypy mypy-extensions pep8-naming flake8-docstrings
-    else
-        while getopts "23" version
-        do
-            case $version in
-                2)
-                    pip2 install flake8 yapf mypy mypy-extensions pep8-naming flake8-docstrings
-                ;;
-                3)
-                    pip3 install flake8 yapf mypy mypy-extensions pep8-naming flake8-docstrings
-                ;;
-                ?)
-                    echo "option must in [-2, -3]"
-                    exit 1
-                ;;
-            esac
-        done
-    fi
-}
