@@ -18,3 +18,5 @@
 	snapshot = !git stash save "snapshot: $(date +'%Y-%m-%d %H:%M:%S')" && git stash apply "stash@{0}"
 	snapshots = !git stash list --grep snapshot
 	l = log --graph --decorate --date=format:'%Y-%m-%d %H:%M:%S' --abbrev-commit --pretty=format:'%C(red)%h%C(reset) - %C(green)(%cd)%C(reset) %s %C(bold blue)<%an>%C(reset)%C(yellow)%d%C(reset)'
+[push]
+	default = simple
