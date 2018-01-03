@@ -1,7 +1,7 @@
 [core]
 	editor = vim
 	excludesfile = ~/.gitignore
-	autocrlf = false
+	autocrlf = input
 	quotepath = false
 [diff]
 	tool = default-difftool
