@@ -11,7 +11,8 @@
 	s = status
 	ss = status -s
 	cs = commit -s
-	cp = cherry-pick -x
+	cp = cherry-pick
+	cps = cherry-pick -x
 	co = checkout
 	amend = commit --amend
 	unc = reset --mixed HEAD^
