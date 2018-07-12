@@ -16,6 +16,11 @@ if [[ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting ]]
     git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 fi
 
+if [[ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions ]]; then
+    echo "Install zsh-completions..."
+    git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
+fi
+
 mkdir ~/.oh-my-zsh/custom/themes/
 cp -v zsh/ys.zsh-theme ~/.oh-my-zsh/custom/themes/
 cp -v zsh/alias ~/.alias
@@ -33,3 +38,6 @@ cp -v git/gitconfig ~/.gitconfig
 # ssh
 cp -v ssh/config ~/.ssh/config
 mkdir -p ~/.ssh/socks
+
+# python
+cp -v python/flake8 ~/.flake8
