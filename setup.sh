@@ -41,3 +41,4 @@ mkdir -p ~/.ssh/socks
 
 # python
 cp -v python/flake8 ~/.flake8
+python3 -m pip install -r python/tools.txt --user
