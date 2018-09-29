@@ -40,5 +40,7 @@ cp -v ssh/config ~/.ssh/config
 mkdir -p ~/.ssh/socks
 
 # python
+mkdir -p ~/.config/pip
 cp -v python/flake8 ~/.flake8
+cp -v python/pip.conf ~/.config/pip/pip.conf
 python3 -m pip install -r python/tools.txt --user

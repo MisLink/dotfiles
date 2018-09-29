@@ -38,7 +38,7 @@ set hlsearch
 " 回退键生效
 set backspace=2
 " 启用鼠标
-set mouse=a
+" set mouse=a
 " 显示匹配括号
 set showmatch
 " 在状态栏显示正在输入的命令
