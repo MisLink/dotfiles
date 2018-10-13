@@ -1,4 +1,7 @@
 #!/bin/zsh
+set -e -o pipefail
+
+DIR=`dirname "$0"`
 
 # zsh
 if [[ ! -d ~/.oh-my-zsh ]]; then
@@ -21,26 +24,25 @@ if [[ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions ]]; then
     git clone https://github.com/zsh-users/zsh-completions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-completions
 fi
 
-mkdir ~/.oh-my-zsh/custom/themes/
-cp -v zsh/ys.zsh-theme ~/.oh-my-zsh/custom/themes/
-cp -v zsh/alias ~/.alias
-cp -v zsh/zshrc ~/.zshrc
+mkdir -vp ~/.ssh/socks
+mkdir -vp ~/.config/pip
+mkdir -vp ~/.oh-my-zsh/custom/themes
+cp -v $DIR/zsh/ys.zsh-theme ~/.oh-my-zsh/custom/themes/
+cp -v $DIR/zsh/alias ~/.alias
+cp -v $DIR/zsh/zshrc ~/.zshrc
+cp -v $DIR/vim/vimrc ~/.vimrc
+cp -v $DIR/tmux/tmux.conf ~/.tmux.conf
+cp -v $DIR/git/gitconfig ~/.gitconfig
+cp -v $DIR/ssh/config ~/.ssh/config
+cp -v $DIR/python/flake8 ~/.flake8
+cp -v $DIR/python/pip.conf ~/.config/pip/pip.conf
 
-# vim
-cp -v vim/vimrc ~/.vimrc
+# macOS
+if [[ "$(uname)" == "Darwin" ]]; then
+    . $DIR/homebrew.sh
+fi
 
-# tmux
-cp -v tmux/tmux.conf ~/.tmux.conf
+# asdf
+. $DIR/asdf.sh
 
-# gitconfig
-cp -v git/gitconfig ~/.gitconfig
-
-# ssh
-cp -v ssh/config ~/.ssh/config
-mkdir -p ~/.ssh/socks
-
-# python
-mkdir -p ~/.config/pip
-cp -v python/flake8 ~/.flake8
-cp -v python/pip.conf ~/.config/pip/pip.conf
-python3 -m pip install -r python/tools.txt --user
+`~/.asdf/bin/asdf which python` -m pip install --user -r $DIR/python/lang-tools.txt

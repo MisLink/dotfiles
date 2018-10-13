@@ -1,9 +1,0 @@
-black
-mycli
-pgcli
-flake8
-flake8-bugbear
-httpie
-jupyter
-mypy
-pipenv
