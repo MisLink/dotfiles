@@ -24,6 +24,31 @@ brew install httpie
 brew install mycli
 brew install pgcli
 
+brew cask install google-chrome
+brew cask install visual-studio-code
+brew cask install authy
+brew cask install typora
+brew cask install gitkraken
+brew cask install jetbrains-toolbox
+brew cask install dash
+brew cask install microsoft-office
+brew cask install steam
+brew cask install bettertouchtool
+brew cask install appcleaner
+brew cask install yinxiangbiji
+brew cask install shadowsocksx-ng
+brew cask install the-unarchiver
+brew cask install onedrive
+brew cask install iterm2
+brew cask install battle-net
+brew cask install jietu
+brew cask install itsycal
+brew cask install kindle
+brew cask install neteasemusic
+brew cask install qqmusic
+brew cask install qq
+brew cask install wechat
+brew cask install parallels
 brew cask install docker
 brew cask install iina
 brew cask install cakebrew
