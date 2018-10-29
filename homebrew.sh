@@ -17,6 +17,7 @@ brew install ctags
 brew install zsh
 brew install vim
 brew install git
+brew install fzf
 brew install trash
 brew install pandoc
 brew install wrk
