@@ -24,6 +24,7 @@ brew install wrk
 brew install httpie
 brew install mycli
 brew install pgcli
+brew install cookiecutter
 
 brew cask install google-chrome
 brew cask install visual-studio-code

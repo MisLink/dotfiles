@@ -10,9 +10,7 @@ plugins=(npm docker docker-compose dotenv brew osx asdf git pip extract z zsh-sy
 # export
 export LC_ALL="en_US.UTF-8"
 export EDITOR="vim"
-export PIPENV_PYPI_MIRROR="https://pypi.tuna.tsinghua.edu.cn/simple"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
-export PIPENV_VENV_IN_PROJECT=1
 
 # source
 if [[ -e ~/.alias ]]; then
