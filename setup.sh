@@ -46,3 +46,8 @@ fi
 . $DIR/asdf.sh
 
 `~/.asdf/bin/asdf which python` -m pip install --user -r $DIR/python/lang-tools.txt
+
+# aria2
+mkdir -vp ~/.aria2
+cp -v $DIR/aria2.conf ~/.aria2/
+touch ~/.aria2/aria2.session
