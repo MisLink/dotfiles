@@ -16,3 +16,9 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 if [[ -e ~/.alias ]]; then
     . ~/.alias
 fi
+
+if [[ -e `pwd`/venv/bin/activate ]]; then
+    . `pwd`/venv/bin/activate
+elif [[ -e `pwd`/.venv/bin/activate ]]; then
+    . `pwd`/.venv/bin/activate
+fi
