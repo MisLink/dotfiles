@@ -45,7 +45,8 @@ fi
 # asdf
 . $DIR/asdf.sh
 
-`~/.asdf/bin/asdf which python` -m pip install --user -r $DIR/python/lang-tools.txt
+# TODO consider migrating to pipx(https://github.com/cs01/pipx)
+# `~/.asdf/bin/asdf which python` -m pip install --user -r $DIR/python/lang-tools.txt
 
 # aria2
 mkdir -vp ~/.aria2
