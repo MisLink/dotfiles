@@ -21,3 +21,4 @@ if [ -e `pwd`/venv/bin/activate ]; then
     . `pwd`/venv/bin/activate
 elif [ -e `pwd`/.venv/bin/activate ]; then
     . `pwd`/.venv/bin/activate
+fi
