@@ -5,6 +5,7 @@ if ! which brew &>/dev/null; then
     echo "Install homebrew..."
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+# change source
 brew update
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 cd "$(brew --repo)"
@@ -12,6 +13,8 @@ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew
 cd "$(brew --repo)/Library/Taps/homebrew/homebrew-core"
 git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git
 brew update
+# add tap
+brew tap homebrew/cask-fonts
 
 brew install aria2
 brew install ctags
@@ -56,3 +59,8 @@ brew cask install docker
 brew cask install iina
 brew cask install cakebrew
 brew cask install qlcolorcode qlimagesize qlmarkdown qlstephen quicklook-json
+# font
+brew cask install font-sarasa-gothic
+brew cask install font-source-han-sans
+brew cask install font-source-han-serif-el-m
+brew cask install font-source-han-serif-sb-h

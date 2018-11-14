@@ -13,12 +13,11 @@ export EDITOR="vim"
 export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles"
 
 # source
-if [[ -e ~/.alias ]]; then
-    . ~/.alias
-fi
+[ -e ~/.alias ] && . ~/.alias
 
-if [[ -e `pwd`/venv/bin/activate ]]; then
+[ -e ~/.fzf.zsh ] && . ~/.fzf.zsh
+
+if [ -e `pwd`/venv/bin/activate ]; then
     . `pwd`/venv/bin/activate
-elif [[ -e `pwd`/.venv/bin/activate ]]; then
+elif [ -e `pwd`/.venv/bin/activate ]; then
     . `pwd`/.venv/bin/activate
-fi
