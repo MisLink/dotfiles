@@ -19,17 +19,14 @@ brew tap homebrew/cask-fonts
 brew install aria2
 brew install ctags
 brew install zsh
-brew install vim
+brew install vim --with-gettext
 brew install git
 brew install fzf
 brew install trash
 brew install pandoc
 brew install wrk
-brew install httpie
-brew install mycli
-brew install pgcli
-brew install cookiecutter
-
+# cask
+brew cask install telegram
 brew cask install google-chrome
 brew cask install visual-studio-code
 brew cask install authy
