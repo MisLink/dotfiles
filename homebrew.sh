@@ -19,12 +19,13 @@ brew tap homebrew/cask-fonts
 brew install aria2
 brew install ctags
 brew install zsh
-brew install vim --with-gettext
+brew install vim
 brew install git
-brew install fzf
 brew install trash
 brew install pandoc
 brew install wrk
+brew install supervisor
+brew install watch
 # cask
 brew cask install telegram
 brew cask install google-chrome
