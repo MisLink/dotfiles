@@ -14,9 +14,3 @@ export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.tuna.tsinghua.edu.cn/homebrew-bot
 
 # source
 [ -e ~/.alias ] && . ~/.alias
-
-if [ -e `pwd`/venv/bin/activate ]; then
-    . `pwd`/venv/bin/activate
-elif [ -e `pwd`/.venv/bin/activate ]; then
-    . `pwd`/.venv/bin/activate
-fi
