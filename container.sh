@@ -6,3 +6,4 @@ docker run --name=zookeeper -p 8080:8080 -p 3888:3888 -p 2888:2888 -p 2181:2181 
 
 docker run --name=aria2 -v <>:/app/Downloads -p 6800:6800 --restart=always -d gjquoiai/aria2:latest
 docker run --name=aria2_web --restart always -d -p 8000:8888 -v <>:/aria2 -w /aria2 python:3.6 python -m http.server 8000 -b 0.0.0.0
+docker run --name=mongo -p 27017:27017 --restart=always -d mongo

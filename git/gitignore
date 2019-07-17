@@ -1,0 +1,10 @@
+# python
+.venv/
+# asdf
+.tool-versions
+# editor
+.vscode/
+jsconfig.json
+.idea/
+# mac
+.DS_Store
