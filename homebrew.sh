@@ -15,6 +15,7 @@ git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/home
 brew update
 # add tap
 brew tap homebrew/cask-fonts
+brew tap homebrew/cask-versions
 
 brew install ctags
 brew install zsh
@@ -24,6 +25,15 @@ brew install trash
 brew install pandoc
 brew install wrk
 brew install watch
+brew install gnupg
+brew install graphviz
+brew install kubectx
+brew install kubernetes-cli
+brew install tldr
+brew install wget
+brew install cloc
+brew install tree
+brew install bfg
 # cask
 brew cask install telegram
 brew cask install google-chrome
@@ -53,6 +63,11 @@ brew cask install parallels
 brew cask install docker
 brew cask install iina
 brew cask install cakebrew
+brew cask install dozer
+brew cask install fliqlo
+brew cask install lunar
+brew cask install michaelvillar-timer
+brew cask install minikube
 brew cask install qlcolorcode qlimagesize qlmarkdown qlstephen quicklook-json
 # font
 brew cask install font-sarasa-gothic font-source-han-sans font-source-han-serif-el-m font-source-han-serif-sb-h

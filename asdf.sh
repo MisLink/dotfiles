@@ -6,7 +6,7 @@ fi
 
 ~/.asdf/bin/asdf update
 
-if ! ~/.asdf/bin/asdf plugin-list | grep python &>/dev/null; then
-    echo "Add plugin python..."
-    ~/.asdf/bin/asdf plugin-add python https://github.com/tuvistavie/asdf-python.git
-fi
+~/.asdf/bin/asdf plugin-add python
+~/.asdf/bin/asdf plugin-add golang
+~/.asdf/bin/asdf plugin-add nodejs
+~/.asdf/bin/asdf plugin-add rust
