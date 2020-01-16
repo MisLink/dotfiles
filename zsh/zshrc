@@ -15,9 +15,9 @@ export JAVA_HOME=$(asdf where java)
 export GPG_TTY=$(tty)
 
 # source
-test -e "~/.alias" && source "~/.alias"
-test -e "~/.iterm2_shell_integration.zsh" && source "~/.iterm2_shell_integration.zsh"
-test -e "~/.ghcup/env" && source "~/.ghcup/env"
+test -e "${HOME}/.alias" && source "${HOME}/.alias"
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+test -e "${HOME}/.ghcup/env" && source "${HOME}/.ghcup/env"
 
 # prompt
 PROMPT='$(kube_ps1)'$PROMPT
