@@ -1,9 +1,12 @@
 # macOS
 # need `xcode-select --install` before
 
-if ! which brew &>/dev/null; then
-    echo "Install homebrew..."
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if
+  ! which brew &
+  >/dev/null
+then
+  echo "Install homebrew..."
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 # change source
 brew update
