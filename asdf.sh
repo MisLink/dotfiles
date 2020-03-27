@@ -12,3 +12,4 @@ fi
 ~/.asdf/bin/asdf plugin-add rust
 ~/.asdf/bin/asdf plugin-add java
 ~/.asdf/bin/asdf plugin-add yarn
+~/.asdf/bin/asdf plugin-add haskell
