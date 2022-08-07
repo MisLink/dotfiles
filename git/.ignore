@@ -1,0 +1,10 @@
+# python
+.venv/
+.mypy_cache/
+# asdf
+.tool-versions
+# editor
+.vscode/
+.idea/
+# mac
+.DS_Store
