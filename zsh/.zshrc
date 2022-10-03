@@ -16,9 +16,10 @@ export EDITOR="vim"
 export GPG_TTY=$(tty)
 export PYTHON_BUILD_CACHE_PATH="$HOME/.cache/asdf"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
+export LESS='--chop-long-lines --incsearch --ignore-case --status-column --HILITE-UNREAD --RAW-CONTROL-CHARS --LONG-PROMPT'
 # source
 test -e "${HOME}/.alias" && source "${HOME}/.alias"
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 test -e "${HOME}/.asdf/plugins/java/set-java-home.zsh" && source "${HOME}/.asdf/plugins/java/set-java-home.zsh"
 
 # prompt
