@@ -1,3 +1,4 @@
+# shellcheck shell=sh
 alias del="trash -v"
 alias grep="grep -Ei"
 alias df="df -h"
@@ -5,8 +6,10 @@ alias du="du -h"
 alias j="z"
 alias vi="vim"
 alias pip-update="pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip install -U"
-alias pip-delete="pip freeze | grep -v "^-e" | xargs pip uninstall -y"
+alias pip-delete="pip freeze | grep -v '^-e' | xargs pip uninstall -y"
 alias pa="source ./.venv/bin/activate"
 alias myip="curl -s ifconfig.co/json | jq '.ip, .country'"
+# kitty
+alias s="kitty +kitten ssh"
 #alias docker="podman"
 #alias docker-compose="podman-compose"
