@@ -26,7 +26,7 @@ test -e "${HOME}/.asdf/plugins/java/set-java-home.zsh" && source "${HOME}/.asdf/
 # PROMPT='$(kube_ps1)'$PROMPT
 
 # completions
-autoload -U compinit && compinit
+autoload -U bashcompinit && bashcompinit
 eval "$(register-python-argcomplete pipx)"
 
 # tabtab source for packages

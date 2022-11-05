@@ -36,9 +36,9 @@ set cursorline
 " 高亮显示搜索结果
 set hlsearch
 " 回退键生效
-set backspace=2
+set backspace=indent,eol,start
 " 启用鼠标
-" set mouse=a
+" set mouse+=a
 " 显示匹配括号
 set showmatch
 " 在状态栏显示正在输入的命令
@@ -73,3 +73,5 @@ if has("autocmd")
 endif
 
 autocmd filetype crontab setlocal nobackup nowritebackup
+
+nmap Q <Nop>
