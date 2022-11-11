@@ -1,4 +1,4 @@
 .gitsecret/keys/random_seed
 !*.secret
-git/.gitconfig
-ssh/.ssh/config
+ssh/.ssh/host_config
+git/.private_gitconfig

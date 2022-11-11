@@ -1,0 +1,67 @@
+[core]
+editor = vim
+excludesfile = ~/.ignore
+autocrlf = input
+quotepath = false
+pager = delta
+
+[interactive]
+diffFilter = delta --color-only
+
+[diff]
+tool = vscode
+colorMoved = default
+
+[difftool "vscode"]
+cmd = code --wait --diff $LOCAL $REMOTE
+
+[merge]
+conflictstyle = diff3
+tool = vscode
+
+[mergetool "vscode"]
+cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+
+[alias]
+s = status
+ss = status -s
+cs = commit -s
+cp = cherry-pick
+cps = cherry-pick -x
+co = checkout
+amend = commit --amend
+unc = reset --mixed HEAD^
+l = log --graph --decorate --date=format:'%Y-%m-%d %H:%M:%S' --abbrev-commit --pretty=format:'%C(red)%h%C(reset) - %C(green)(%cd)%C(reset) %s %C(bold blue)<%an>%C(reset)%C(yellow)%d%C(reset)'
+
+[push]
+default = simple
+followTags = true
+
+[pull]
+rebase = true
+
+[user]
+email = gjq.uoiai@outlook.com
+name = MisLink
+signingkey = 5A77523D112392AF
+
+[gpg]
+program = gpg
+
+[filter "lfs"]
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
+process = git-lfs filter-process
+
+[init]
+defaultBranch = master
+
+[delta]
+navigate = true
+side-by-side = true
+line-numbers = true
+syntax-theme = Dracula
+
+[include]
+path = .private_gitconfig
