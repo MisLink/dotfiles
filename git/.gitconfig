@@ -59,9 +59,12 @@ defaultBranch = master
 
 [delta]
 navigate = true
-side-by-side = true
 line-numbers = true
 syntax-theme = Dracula
+features = line-numbers
+
+[delta "line-numbers"]
+line-numbers-zero-style = gray
 
 [include]
 path = .private_gitconfig
