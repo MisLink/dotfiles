@@ -27,7 +27,7 @@ test -e "${HOME}/.asdf/plugins/java/set-java-home.zsh" && source "${HOME}/.asdf/
 
 # completions
 autoload -U bashcompinit && bashcompinit
-eval "$(register-python-argcomplete pipx)"
+eval "$(register-python-argcomplete-3.10 pipx)"
 
 # tabtab source for packages
 # uninstall by removing these lines

@@ -1,0 +1,17 @@
+select = [
+    "E",
+    "F",
+    "W",   # flake8
+    "I",   # isort
+    "S",   # flake8-bandit
+    "B",   #flake8-bugbear
+    "N",   # pep8-naming
+    "C90", # mccabe
+    "RUF", # ruff
+]
+fix = true
+ignore = []
+ignore-init-module-imports = true
+
+[isort]
+force-single-line = true
