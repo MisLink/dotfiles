@@ -6,7 +6,7 @@ export FZF_BASE=/opt/local/share/fzf/
 
 ZSH_THEME="ys"
 
-plugins=(nerdctl fzf pdm rust shell-proxy npm docker docker-compose macos pip asdf extract z.lua zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(nerdctl fzf pdm rust shell-proxy npm docker docker-compose macos pip asdf extract z.lua zsh-completions zsh-autosuggestions zsh-syntax-highlighting per-directory-history)
 
 source $ZSH/oh-my-zsh.sh
 
