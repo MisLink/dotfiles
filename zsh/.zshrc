@@ -1,12 +1,12 @@
 # zsh
-export PATH="$HOME/.cabal/bin:/$HOME/.ghcup/bin:$HOME/.golang:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.golang:$HOME/.local/bin:$PATH"
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM="$HOME/zsh_custom"
 export FZF_BASE=/opt/local/share/fzf/
 
 ZSH_THEME="ys"
 
-plugins=(nerdctl fzf pdm rust shell-proxy npm docker docker-compose macos pip asdf extract z.lua zsh-completions zsh-autosuggestions zsh-syntax-highlighting per-directory-history)
+plugins=(fzf pdm rust shell-proxy npm docker docker-compose macos pip asdf extract z.lua zsh-completions zsh-autosuggestions zsh-syntax-highlighting per-directory-history)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,4 +31,9 @@ eval "$(register-python-argcomplete-3.10 pipx)"
 
 # tabtab source for packages
 # uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
+[[ -f ${HOME}/.config/tabtab/zsh/__tabtab.zsh ]] && . ${HOME}/.config/tabtab/zsh/__tabtab.zsh || true
+
+# opam configuration
+[[ ! -r ${HOME}/.opam/opam-init/init.zsh ]] || source ${HOME}/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+[ -f "${HOME}/.ghcup/env" ] && source "${HOME}/.ghcup/env" # ghcup-env

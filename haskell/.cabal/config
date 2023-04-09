@@ -1,0 +1,3 @@
+repository mirrors.ustc.edu.cn
+  url: https://mirrors.ustc.edu.cn/hackage/
+  secure: True
