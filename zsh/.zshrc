@@ -6,7 +6,7 @@ export FZF_BASE=/opt/local/share/fzf/
 
 ZSH_THEME="ys"
 
-plugins=(fzf pdm rust shell-proxy npm docker docker-compose macos pip asdf extract z.lua zsh-completions zsh-autosuggestions zsh-syntax-highlighting per-directory-history)
+plugins=(fzf pdm rust shell-proxy npm docker docker-compose direnv macos pip asdf extract z.lua zsh-completions zsh-autosuggestions zsh-syntax-highlighting per-directory-history)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -17,6 +17,7 @@ export GPG_TTY=$(tty)
 export PYTHON_BUILD_CACHE_PATH="$HOME/.cache/asdf"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LESS='--chop-long-lines --incsearch --ignore-case --status-column --hilite-unread --LONG-PROMPT --RAW-CONTROL-CHARS'
+export HISTORY_START_WITH_GLOBAL=true
 # source
 test -e "${HOME}/.alias" && source "${HOME}/.alias"
 # test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
