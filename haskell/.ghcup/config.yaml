@@ -1,2 +1,15 @@
+cache: null
+downloader: Curl
+gpg-setting: null
+keep-dirs: null
+key-bindings: null
+meta-cache: null
+meta-mode: null
+mirrors: null
+no-network: null
+no-verify: null
+platform-override: null
 url-source:
-  OwnSource: https://mirrors.ustc.edu.cn/ghcup/ghcup-metadata/ghcup-0.0.7.yaml
+  OwnSource:
+  - Right: https://mirrors.ustc.edu.cn/ghcup/ghcup-metadata/ghcup-0.0.7.yaml
+verbose: null
