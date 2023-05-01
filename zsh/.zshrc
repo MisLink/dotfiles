@@ -3,6 +3,7 @@ export PATH="$HOME/.golang:$HOME/.local/bin:$PATH"
 export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM="$HOME/zsh_custom"
 export FZF_BASE=/opt/local/share/fzf/
+export LC_ALL="en_US.UTF-8"
 
 ZSH_THEME="ys"
 
@@ -11,7 +12,6 @@ plugins=(fzf pdm rust shell-proxy npm docker docker-compose direnv macos pip asd
 source $ZSH/oh-my-zsh.sh
 
 # export
-export LC_ALL="en_US.UTF-8"
 export EDITOR="vim"
 export GPG_TTY=$(tty)
 export PYTHON_BUILD_CACHE_PATH="$HOME/.cache/asdf"
@@ -39,3 +39,5 @@ eval "$(register-python-argcomplete-3.11 pipx)"
 [[ ! -r ${HOME}/.opam/opam-init/init.zsh ]] || source ${HOME}/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 [ -f "${HOME}/.ghcup/env" ] && source "${HOME}/.ghcup/env" # ghcup-env
+
+[ -f "${HOME}/.config/op/plugins.sh" ] && source "${HOME}/.config/op/plugins.sh" # op plugins
