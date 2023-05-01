@@ -15,6 +15,7 @@ export LC_ALL="en_US.UTF-8"
 export EDITOR="vim"
 export GPG_TTY=$(tty)
 export PYTHON_BUILD_CACHE_PATH="$HOME/.cache/asdf"
+export RUBY_BUILD_CACHE_PATH="$HOME/.cache/asdf"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LESS='--chop-long-lines --incsearch --ignore-case --status-column --hilite-unread --LONG-PROMPT --RAW-CONTROL-CHARS'
 export HISTORY_START_WITH_GLOBAL=true
@@ -28,7 +29,7 @@ test -e "${HOME}/.asdf/plugins/java/set-java-home.zsh" && source "${HOME}/.asdf/
 
 # completions
 autoload -U bashcompinit && bashcompinit
-eval "$(register-python-argcomplete-3.10 pipx)"
+eval "$(register-python-argcomplete-3.11 pipx)"
 
 # tabtab source for packages
 # uninstall by removing these lines

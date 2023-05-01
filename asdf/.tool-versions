@@ -1,9 +1,8 @@
 python 3.11.3
 golang 1.20.3
-java temurin-17.0.5+8
-nodejs 18.13.0
-protoc 22.2
-ruby 3.1.2
-maven 3.9.1
-pnpm 6.32.3
+java temurin-20.0.1+9
+nodejs 18.16.0
+protoc 22.3
+ruby 3.2.2
 racket 8.8
+elixir 1.14.4-otp-25
