@@ -54,3 +54,5 @@ eval "$(register-python-argcomplete-3.11 pipx)"
 [[ -f "$HOME/.ghcup/env" ]] && source "$HOME/.ghcup/env" # ghcup-env
 
 [[ -f "$HOME/.config/op/plugins.sh" ]] && source "$HOME/.config/op/plugins.sh" # op plugins
+
+[[ -f "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
