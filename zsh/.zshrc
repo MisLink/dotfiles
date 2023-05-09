@@ -15,7 +15,25 @@ export HISTORY_START_WITH_GLOBAL=1
 
 ZSH_THEME="ys"
 
-plugins=(fzf pdm rust shell-proxy npm docker docker-compose direnv macos pip asdf extract z.lua zsh-completions zsh-autosuggestions zsh-syntax-highlighting per-directory-history)
+plugins=(
+  per-directory-history
+  fzf
+  pdm
+  rust
+  shell-proxy
+  npm
+  docker
+  docker-compose
+  direnv
+  macos
+  pip
+  asdf
+  extract
+  z.lua
+  zsh-completions
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
 
 # source
 source $ZSH/oh-my-zsh.sh
@@ -31,7 +49,7 @@ eval "$(register-python-argcomplete-3.11 pipx)"
 [[ -f $HOME/.config/tabtab/zsh/__tabtab.zsh ]] && . $HOME/.config/tabtab/zsh/__tabtab.zsh || true
 
 # opam configuration
-[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh >/dev/null 2>/dev/null
 
 [[ -f "$HOME/.ghcup/env" ]] && source "$HOME/.ghcup/env" # ghcup-env
 
