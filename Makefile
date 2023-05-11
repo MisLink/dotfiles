@@ -1,5 +1,5 @@
 install:
-	stow -v --target=$$HOME --ignore='.*\.secret' -R */
+	stow -v -R */
 
 uninstall:
-	stow -v --target=$$HOME --ignore='.*\.secret' -D */
+	stow -v -D */
