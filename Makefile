@@ -1,5 +1,5 @@
 install:
-	stow -v -R */
+	stow --target=$(HOME) --no-folding --ignore="\.secret" -v -R */
 
 uninstall:
-	stow -v -D */
+	stow --target=$(HOME) --no-folding --ignore="\.secret" -v -D */
