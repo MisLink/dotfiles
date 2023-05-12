@@ -1,6 +1,6 @@
 #compdef pdm
 
-PDM_PYTHON="/Users/***REMOVED***/.local/pipx/venvs/pdm/bin/python"
+PDM_PYTHON="$HOME/.local/pipx/venvs/pdm/bin/python"
 PDM_PIP_INDEXES=($(command ${PDM_PYTHON} -m pdm config pypi.url))
 
 _pdm() {
@@ -572,4 +572,3 @@ _pdm_pip_packages() {
 }
 
 _pdm "$@"
-
