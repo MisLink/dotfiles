@@ -11,12 +11,10 @@ export PYTHON_BUILD_CACHE_PATH="$HOME/.cache/asdf"
 export RUBY_BUILD_CACHE_PATH="$HOME/.cache/asdf"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LESS='--chop-long-lines --incsearch --ignore-case --status-column --hilite-unread --LONG-PROMPT --RAW-CONTROL-CHARS'
-export HISTORY_START_WITH_GLOBAL=1
 
 ZSH_THEME="ys"
 
 plugins=(
-  per-directory-history
   fzf
   pdm
   rust
@@ -30,6 +28,7 @@ plugins=(
   asdf
   extract
   z.lua
+  per-directory-history
   zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting
