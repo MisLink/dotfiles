@@ -15,6 +15,7 @@ export LESS='--chop-long-lines --incsearch --ignore-case --status-column --hilit
 ZSH_THEME="ys"
 
 plugins=(
+  rtx
   fzf
   pdm
   rust
@@ -25,7 +26,6 @@ plugins=(
   direnv
   macos
   pip
-  asdf
   extract
   z.lua
   per-directory-history
@@ -37,7 +37,6 @@ plugins=(
 # source
 source $ZSH/oh-my-zsh.sh
 [[ -f "$HOME/.alias" ]] && source "$HOME/.alias"
-[[ -f "$HOME/.asdf/plugins/java/set-java-home.zsh" ]] && source "$HOME/.asdf/plugins/java/set-java-home.zsh"
 
 # completions
 autoload -U bashcompinit && bashcompinit
