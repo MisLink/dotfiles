@@ -28,7 +28,6 @@ plugins=(
   pip
   extract
   z.lua
-  per-directory-history
   zsh-completions
   zsh-autosuggestions
   zsh-syntax-highlighting

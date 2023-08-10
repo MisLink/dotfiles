@@ -6,3 +6,4 @@ protoc 21.10
 ruby   3.2
 racket 8.9
 elixir 1.14.4-otp-25
+zig    0.10
