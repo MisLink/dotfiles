@@ -1,6 +1,5 @@
 # export
 export PATH="$HOME/.golang/bin:$HOME/.local/bin:$PATH"
-export ZSH=$HOME/.oh-my-zsh
 export ZSH_CUSTOM="$HOME/zsh_custom"
 export FZF_BASE=/opt/local/share/fzf/
 export LC_ALL="en_US.UTF-8"
@@ -11,34 +10,67 @@ export PYTHON_BUILD_CACHE_PATH="$HOME/.cache/asdf"
 export RUBY_BUILD_CACHE_PATH="$HOME/.cache/asdf"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export LESS='--chop-long-lines --incsearch --ignore-case --status-column --hilite-unread --LONG-PROMPT --RAW-CONTROL-CHARS'
+export CLICOLOR=1
 
-ZSH_THEME="ys"
+setopt multios
+setopt long_list_jobs
+setopt interactivecomments
+# history
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_verify
+setopt share_history
+# directories
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt pushdminus
+# completions
+unsetopt menu_complete
+unsetopt flowcontrol
+setopt auto_menu
+setopt complete_in_word
+setopt always_to_end
+# completions
+WORDCHARS=''
+zstyle ':completion:*:*:*:*:*' menu select
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]-_}={[:upper:][:lower:]_-}' 'r:|=*' 'l:|=* r:|=*'
+zstyle ':completion:*' special-dirs true
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
+zstyle ':completion:*:*:*:*:processes' command "ps -u $USERNAME -o pid,user,comm -w -w"
+zstyle ':completion:*:cd:*' tag-order local-directories directory-stack path-directories
+zstyle ':completion:*' use-cache yes
+zstyle ':completion:*:*:*:users' ignored-patterns '_*'
+zstyle '*' single-ignored show
 
-plugins=(
-  rtx
-  fzf
-  pdm
-  rust
-  shell-proxy
-  npm
-  docker
-  docker-compose
-  direnv
-  macos
-  pip
-  extract
-  z.lua
-  zsh-completions
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
+fpath=("${HOME}/zsh_custom/.zfunc" "${HOME}/zsh_custom/plugins/zsh-completions/src" $fpath)
+autoload -U +X bashcompinit && bashcompinit
+autoload -U compinit && compinit
 
-# source
-source $ZSH/oh-my-zsh.sh
+# starship
+eval "$(starship init zsh)"
+# rtx
+eval "$(rtx completion zsh)"
+eval "$(rtx activate zsh)"
+# fzf
+source /opt/local/share/fzf/shell/key-bindings.zsh
+source /opt/local/share/fzf/shell/completion.zsh
+# direnv
+eval "$(direnv hook zsh)"
+#z.lua
+eval "$(lua ${ZSH_CUSTOM}/plugins/z.lua/z.lua --init zsh once enhanced)"
+# zsh-autosuggestions
+source ${ZSH_CUSTOM}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+# zsh-syntax-highlighting
+source ${ZSH_CUSTOM}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# alias
 [[ -f "$HOME/.alias" ]] && source "$HOME/.alias"
 
 # completions
-autoload -U bashcompinit && bashcompinit
 eval "$(register-python-argcomplete-3.11 pipx)"
 
 # tabtab source for packages
