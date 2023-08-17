@@ -1,0 +1,13 @@
+[tools]
+python = "3.11"
+java = "temurin-20"
+node = "lts"
+protoc = "21.10"
+ruby = "3.2"
+racket = "8.9"
+elixir = "1.14.4-otp-25"
+zig = "0.10"
+go = "1.20.4"
+
+[settings]
+plugin_autoupdate_last_check_duration = "1 week"
