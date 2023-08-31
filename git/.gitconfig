@@ -43,10 +43,16 @@ rebase = true
 [user]
 email = gjq.uoiai@outlook.com
 name = MisLink
-signingkey = 5A77523D112392AF
+signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKnH3JJcsZnksInIdffC18IkcI2IGxnvyQBv3j+/MHsm
 
 [gpg]
-program = gpg
+format = ssh
+
+[gpg "ssh"]
+program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
+[commit]
+gpgsign = true
 
 [filter "lfs"]
 required = true
