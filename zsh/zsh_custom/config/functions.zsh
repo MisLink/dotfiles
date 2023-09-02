@@ -1,4 +1,3 @@
-# shellcheck shell=sh
 # macos
 alias cdf='cd "$(osascript -e "tell application \"Finder\" to POSIX path of (insertion location as alias)")"'
 alias ofd='open -a Finder .'
@@ -36,3 +35,12 @@ alias pip-delete="pip freeze | grep -v '^-e' | xargs pip uninstall -y"
 alias pa="source ./.venv/bin/activate"
 # kitty
 alias s="kitty +kitten ssh"
+
+_fzf_compgen_path() {
+  fd --hidden --follow . "$1"
+}
+
+# Use fd to generate the list for directory completion
+_fzf_compgen_dir() {
+  fd --type d --hidden --follow . "$1"
+}

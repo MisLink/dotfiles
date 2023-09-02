@@ -8,3 +8,6 @@
 .idea/
 # mac
 .DS_Store
+# dotenv
+.env
+.envrc
