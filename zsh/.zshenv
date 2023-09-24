@@ -5,6 +5,9 @@ export LIBRARY_PATH=/opt/local/lib
 export ZSH_CUSTOM="$HOME/zsh_custom"
 export LC_ALL="en_US.UTF-8"
 
+export RUSTUP_DIST_SERVER="https://rsproxy.cn"
+export RUSTUP_UPDATE_ROOT="https://rsproxy.cn/rustup"
+
 export EDITOR="vim"
 export GPG_TTY=$(tty)
 export VIRTUAL_ENV_DISABLE_PROMPT=1
