@@ -44,3 +44,10 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type d --hidden --follow . "$1"
 }
+
+function man-preview() {
+  local page
+  for page in "${(@f)"$(man -w $@)"}"; do
+    command mandoc -Tpdf $page | open -f -a Preview
+  done
+}
