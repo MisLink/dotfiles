@@ -11,3 +11,6 @@
 # dotenv
 .env
 .envrc
+# mise
+.mise.toml
+.mise.*.toml

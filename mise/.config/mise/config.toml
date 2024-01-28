@@ -1,5 +1,5 @@
 [tools]
-python = { version = "sub-0.1:latest", virtualenv = ".venv" }
+python = "sub-0.1:latest"
 java = ["temurin-21", "temurin-8"]
 node = "lts"
 protoc = "latest"
@@ -17,7 +17,7 @@ protoc = "https://github.com/paxosglobal/asdf-protoc.git"
 [settings]
 plugin_autoupdate_last_check_duration = "1 week"
 experimental = true
-env_file = ".env"
 
 [settings.status]
 missing_tools = false
+show_env = true

@@ -51,3 +51,8 @@ function man-preview() {
     command mandoc -Tpdf $page | open -f -a Preview
   done
 }
+
+function new_mise() {
+  echo "[settings]\nenv_file = \".env\"" > .mise.toml
+  touch .env
+}
