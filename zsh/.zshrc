@@ -30,11 +30,10 @@ eval "$(register-python-argcomplete-3.11 pipx)"
 [[ -f "$HOME/.ghcup/env" ]] && source "$HOME/.ghcup/env" # ghcup-env
 # starship
 eval "$(starship init zsh)"
-# rtx
-eval "$(rtx completion zsh)"
-# eval "$(rtx activate zsh)"
+# mise
+eval "$(mise completion zsh)"
 # direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 # zoxide
 eval "$(zoxide init zsh)"
 # fzf
