@@ -30,8 +30,12 @@ cp = cherry-pick
 cps = cherry-pick -x
 co = checkout
 amend = commit --amend
+fixup = commit --fixup
 unc = reset --mixed HEAD^
 l = log --graph --decorate --date=format:'%Y-%m-%d %H:%M:%S' --abbrev-commit --pretty=format:'%C(red)%h%C(reset) - %C(green)(%cd)%C(reset) %s %C(bold blue)<%an>%C(reset)%C(yellow)%d%C(reset)'
+
+[branch]
+sort = -committerdate
 
 [push]
 default = simple
@@ -39,6 +43,10 @@ followTags = true
 
 [pull]
 rebase = true
+
+[rebase]
+autosquash = true
+autostash = true
 
 [user]
 email = gjq.uoiai@outlook.com
@@ -53,6 +61,10 @@ program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [commit]
 gpgsign = true
+verbose = true
+
+[rerere]
+enabled = true
 
 [filter "lfs"]
 required = true
