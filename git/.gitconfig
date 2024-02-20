@@ -11,12 +11,13 @@ diffFilter = delta --color-only
 [diff]
 tool = vscode
 colorMoved = default
+submodule = log
 
 [difftool "vscode"]
 cmd = code --wait --diff $LOCAL $REMOTE
 
 [merge]
-conflictstyle = diff3
+conflictstyle = zdiff3
 tool = vscode
 
 [mergetool "vscode"]
@@ -33,6 +34,9 @@ amend = commit --amend
 fixup = commit --fixup
 unc = reset --mixed HEAD^
 l = log --graph --decorate --date=format:'%Y-%m-%d %H:%M:%S' --abbrev-commit --pretty=format:'%C(red)%h%C(reset) - %C(green)(%cd)%C(reset) %s %C(bold blue)<%an>%C(reset)%C(yellow)%d%C(reset)'
+
+[status]
+submoduleSummary = true
 
 [branch]
 sort = -committerdate
@@ -65,6 +69,12 @@ verbose = true
 
 [rerere]
 enabled = true
+
+[log]
+date = iso
+
+[submodule]
+recurse = true
 
 [filter "lfs"]
 required = true
