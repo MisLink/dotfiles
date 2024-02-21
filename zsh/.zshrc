@@ -32,6 +32,7 @@ eval "$(register-python-argcomplete-3.11 pipx)"
 eval "$(starship init zsh)"
 # mise
 eval "$(mise completion zsh)"
+eval "$(mise activate zsh)"
 # direnv
 # eval "$(direnv hook zsh)"
 # zoxide
