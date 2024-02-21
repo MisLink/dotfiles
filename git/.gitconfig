@@ -51,6 +51,7 @@ rebase = true
 [rebase]
 autosquash = true
 autostash = true
+missingCommitsCheck = error
 
 [user]
 email = gjq.uoiai@outlook.com
