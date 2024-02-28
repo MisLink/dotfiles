@@ -40,6 +40,7 @@ eval "$(zoxide init zsh)"
 # fzf
 source /opt/local/share/fzf/shell/key-bindings.zsh
 source /opt/local/share/fzf/shell/completion.zsh
+eval "$(atuin init zsh)"
 #z.lua
 # eval "$(lua ${ZSH_CUSTOM}/plugins/z.lua/z.lua --init zsh once enhanced)"
 # zsh-autosuggestions
