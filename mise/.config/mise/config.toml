@@ -6,7 +6,7 @@ protoc = "latest"
 ruby = "latest"
 racket = "8"
 zig = "latest"
-go = ["latest", "prefix:1.20"]
+go = ["latest", "prefix:1.21"]
 
 [plugins]
 zig = "https://github.com/cheetah/asdf-zig.git"
