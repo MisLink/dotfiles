@@ -1,6 +1,6 @@
 [tools]
 python = "sub-0.1:latest"
-java = "temurin-21"
+java = ["temurin-21", "temurin-8"]
 node = "lts"
 protoc = "latest"
 ruby = "latest"
@@ -19,5 +19,5 @@ plugin_autoupdate_last_check_duration = "1 week"
 experimental = true
 
 [settings.status]
-missing_tools = false
+missing_tools = "never"
 show_env = true
