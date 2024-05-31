@@ -17,7 +17,7 @@ autoload -U compinit && compinit
 
 # completions
 autoload -U +X bashcompinit && bashcompinit
-eval "$(register-python-argcomplete-3.11 pipx)"
+eval "$(register-python-argcomplete-3.12 pipx)"
 
 # tabtab source for packages
 # uninstall by removing these lines
