@@ -1,6 +1,6 @@
 [tools]
 python = "sub-0.1:latest"
-java = ["temurin-21", "temurin-8"]
+java = ["temurin-21"]
 node = "lts"
 protoc = "latest"
 ruby = "latest"
