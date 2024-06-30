@@ -1,5 +1,5 @@
 [tools]
-python = "sub-0.1:latest"
+python = ["latest", "sub-0.1:latest"]
 java = ["temurin-21"]
 node = "lts"
 protoc = "latest"
@@ -7,6 +7,37 @@ ruby = "latest"
 racket = "8"
 zig = "latest"
 go = ["latest", "prefix:1.21"]
+"go:github.com/google/wire/cmd/wire" = "latest"
+"pipx:black" = "latest"
+"pipx:calibreweb" = "latest"
+"pipx:ipython" = "latest"
+"pipx:iredis" = "latest"
+"pipx:litecli" = "latest"
+"pipx:mycli" = "latest"
+"pipx:mypy" = "latest"
+"pipx:pdm" = "latest"
+"pipx:pgcli" = "latest"
+"pipx:pre-commit" = "latest"
+"pipx:shell-gpt" = "latest"
+"pipx:ruff" = "latest"
+"cargo:cargo-binstall" = "latest"
+"cargo:cargo-generate" = "latest"
+"cargo:cargo-wizard" = "latest"
+"cargo:cargo-watch" = "latest"
+"cargo:cargo-machete" = "latest"
+"cargo:samply" = "latest"
+"cargo:sqlx-cli" = "latest"
+"cargo:trunk" = "latest"
+"go:github.com/golangci/golangci-lint/cmd/golangci-lint" = "latest"
+"go:golang.org/x/tools/cmd/gonew" = "latest"
+"go:golang.org/x/tools/gopls" = "latest"
+"go:github.com/googleapis/api-linter/cmd/api-linter" = "latest"
+"go:github.com/go-delve/delve/cmd/dlv" = "latest"
+"go:entgo.io/ent/cmd/ent" = "latest"
+"go:github.com/yoheimuta/protolint/cmd/protolint" = "latest"
+"go:google.golang.org/protobuf/cmd/protoc-gen-go" = "latest"
+"go:google.golang.org/grpc/cmd/protoc-gen-go-grpc" = "latest"
+"npm:eslint" = "latest"
 
 [plugins]
 zig = "https://github.com/cheetah/asdf-zig.git"
@@ -15,8 +46,10 @@ protoc = "https://github.com/paxosglobal/asdf-protoc.git"
 
 
 [settings]
+legacy_version_file = false
 plugin_autoupdate_last_check_duration = "1 week"
 experimental = true
+python_compile = true
 
 [settings.status]
 missing_tools = "never"
