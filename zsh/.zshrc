@@ -1,7 +1,3 @@
-# export
-export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
-
 # options
 source $ZSH_CUSTOM/config/options.zsh
 # keybindings
