@@ -38,6 +38,7 @@ go = ["latest", "prefix:1.21"]
 "go:google.golang.org/protobuf/cmd/protoc-gen-go" = "latest"
 "go:google.golang.org/grpc/cmd/protoc-gen-go-grpc" = "latest"
 "npm:eslint" = "latest"
+"cargo:watchexec-cli" = "latest"
 
 [plugins]
 zig = "https://github.com/cheetah/asdf-zig.git"

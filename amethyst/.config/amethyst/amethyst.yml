@@ -193,6 +193,10 @@ select-fullscreen-layout:
   mod: mod1
   key: "1"
 
+select-two-pane-layout:
+  mod: mod1
+  key: "2"
+
 # Select column layout
 select-column-layout:
   mod: ""
