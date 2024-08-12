@@ -43,7 +43,6 @@ usage = "latest"
 smithy = "latest"
 
 [plugins]
-zig = "https://github.com/cheetah/asdf-zig.git"
 racket = "https://github.com/MisLink/asdf-racket.git"
 protoc = "https://github.com/paxosglobal/asdf-protoc.git"
 
