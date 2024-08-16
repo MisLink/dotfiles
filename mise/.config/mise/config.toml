@@ -6,7 +6,7 @@ protoc = "latest"
 ruby = "latest"
 racket = "8"
 zig = "latest"
-go = ["latest", "prefix:1.21"]
+go = ["sub-0.1:latest", "latest"]
 "go:github.com/google/wire/cmd/wire" = "latest"
 "pipx:black" = "latest"
 "pipx:calibreweb" = "latest"
@@ -41,6 +41,10 @@ go = ["latest", "prefix:1.21"]
 "cargo:watchexec-cli" = "latest"
 usage = "latest"
 smithy = "latest"
+"pipx:tach" = "latest"
+"go:github.com/cweill/gotests/gotests" = "latest"
+"go:github.com/fatih/gomodifytags" = "latest"
+"go:github.com/josharian/impl" = "latest"
 
 [plugins]
 racket = "https://github.com/MisLink/asdf-racket.git"
