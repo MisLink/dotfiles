@@ -45,6 +45,10 @@ smithy = "latest"
 "go:github.com/cweill/gotests/gotests" = "latest"
 "go:github.com/fatih/gomodifytags" = "latest"
 "go:github.com/josharian/impl" = "latest"
+"cargo:binocle" = "latest"
+"go:github.com/Zxilly/go-size-analyzer/cmd/gsa" = "latest"
+"go:capnproto.org/go/capnp/v3/capnpc-go" = "latest"
+"go:github.com/moderato-app/live-pprof" = "v1"
 
 [plugins]
 racket = "https://github.com/MisLink/asdf-racket.git"
