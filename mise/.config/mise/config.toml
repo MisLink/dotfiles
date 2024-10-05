@@ -49,6 +49,9 @@ smithy = "latest"
 "go:github.com/Zxilly/go-size-analyzer/cmd/gsa" = "latest"
 "go:capnproto.org/go/capnp/v3/capnpc-go" = "latest"
 "go:github.com/moderato-app/live-pprof" = "v1"
+"cargo:git-absorb" = "latest"
+"cargo:bacon" = "latest"
+"cargo:binsider" = { "version" = "latest", "default-features" = "false" }
 
 [plugins]
 racket = "https://github.com/MisLink/asdf-racket.git"
