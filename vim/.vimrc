@@ -1,3 +1,4 @@
+set hidden
 " 开启文件类型侦测
 filetype on
 " 根据侦测到的不同类型加载对应的插件
