@@ -104,8 +104,8 @@ alt-shift-j = 'move down'
 alt-shift-k = 'move up'
 alt-shift-l = 'move right'
 
-alt-ctrl-h = 'workspace prev'
-alt-ctrl-l = 'workspace next'
+alt-shift-p = 'workspace prev --wrap-around'
+alt-shift-n = 'workspace next --wrap-around'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 alt-1 = 'workspace 1'
@@ -168,15 +168,14 @@ enter = 'mode main'
 esc = 'mode main'
 
 [workspace-to-monitor-force-assignment]
-2 = 'secondary'
 4 = 'secondary'
+5 = 'secondary'
 6 = 'secondary'
 e = 'secondary'
 
 [[on-window-detected]]
 check-further-callbacks = true
 run = 'move-node-to-workspace 1'
-if.during-aerospace-startup = true
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.nightly'
