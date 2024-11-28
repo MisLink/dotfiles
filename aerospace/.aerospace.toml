@@ -176,6 +176,7 @@ e = 'secondary'
 [[on-window-detected]]
 check-further-callbacks = true
 run = 'move-node-to-workspace 1'
+if.during-aerospace-startup = true
 
 [[on-window-detected]]
 if.app-id = 'org.mozilla.nightly'
