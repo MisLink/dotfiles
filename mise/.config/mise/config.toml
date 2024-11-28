@@ -2,23 +2,19 @@
 python = ["latest", "sub-0.1:latest"]
 java = ["temurin-21"]
 node = "lts"
-protoc = "latest"
 ruby = "latest"
-racket = "8"
 zig = "latest"
 go = ["latest", "sub-0.1:latest"]
 "go:github.com/google/wire/cmd/wire" = "latest"
 "pipx:black" = "latest"
 "pipx:calibreweb" = "latest"
 "pipx:ipython" = "latest"
-"pipx:iredis" = "latest"
 "pipx:litecli" = "latest"
 "pipx:mycli" = "latest"
 "pipx:mypy" = "latest"
 "pipx:pdm" = "latest"
 "pipx:pgcli" = "latest"
 "pipx:pre-commit" = "latest"
-"pipx:shell-gpt" = "latest"
 "pipx:ruff" = "latest"
 "cargo:cargo-binstall" = "latest"
 "cargo:cargo-generate" = "latest"
@@ -39,8 +35,6 @@ go = ["latest", "sub-0.1:latest"]
 "go:google.golang.org/grpc/cmd/protoc-gen-go-grpc" = "latest"
 "npm:eslint" = "latest"
 "cargo:watchexec-cli" = "latest"
-usage = "latest"
-smithy = "latest"
 "pipx:tach" = "latest"
 "go:github.com/cweill/gotests/gotests" = "latest"
 "go:github.com/fatih/gomodifytags" = "latest"
@@ -52,10 +46,7 @@ smithy = "latest"
 "cargo:git-absorb" = "latest"
 "cargo:bacon" = "latest"
 "cargo:binsider" = { "version" = "latest", "default-features" = "false" }
-
-[plugins]
-racket = "https://github.com/MisLink/asdf-racket.git"
-protoc = "https://github.com/paxosglobal/asdf-protoc.git"
+"aqua:protocolbuffers/protobuf/protoc" = "latest"
 
 
 [settings]
