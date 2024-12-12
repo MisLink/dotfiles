@@ -46,6 +46,7 @@ go = ["latest", "sub-0.1:latest"]
 "cargo:git-absorb" = "latest"
 "cargo:bacon" = "latest"
 "cargo:binsider" = { "version" = "latest", "default-features" = "false" }
+"cargo:tokei" = "latest"
 "aqua:protocolbuffers/protobuf/protoc" = "latest"
 
 
